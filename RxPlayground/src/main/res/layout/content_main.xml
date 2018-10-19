@@ -9,13 +9,25 @@
         tools:showIn="@layout/activity_main"
         tools:context=".MainActivity">
 
-    <TextView
-            android:layout_width="wrap_content"
+    <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            android:orientation="vertical"
+    >
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/debouncer"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+                android:text="Debouncer"
+        />
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rx_debouncer"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+                android:text="Rx Debouncer"
+        />
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
